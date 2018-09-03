@@ -31,7 +31,9 @@ java -jar target/play-tracks-0.0.1-SNAPSHOT.jar
 
 ```
 
-## API Contract
+## Demo & API Contract
+
+API is hosted in AWS at http://api.rvala.com/
 
 ### Get All PlayLists
 
@@ -39,7 +41,7 @@ This end point displays Playlists in the descending orders of Views.
 Also supports pagination
 
 ```
-curl http://host:port/music/playlists
+curl http://api.rvala.com/music/playlists
 
 ```
 
@@ -48,14 +50,14 @@ curl http://host:port/music/playlists
 This end point displays Playlists in the descending orders of Views.
 Also supports pagination
 ```
-curl http://host:port/music/playlists/{tag}
+curl http://api.rvala.com/music/playlists/{tag}
 
 ```
 ### Auto Suggest tags based on the query(tag)
 
 To get suggestions for the query "pop"
 ```
-curl http://host:port/music/playlists/suggestions?tag=pop
+curl http://api.rvala.com/music/playlists/suggestions?tag=pop
 
 ```
 
@@ -64,7 +66,7 @@ These tags will be based on the appearance of the other tags along with the sear
 
 To get recommended tags for "alternative"
 ```
-curl http://host:port/music/playlists/recommendations?tag=alternative
+curl http://api.rvala.com/music/playlists/recommendations?tag=alternative
 
 ```
 
