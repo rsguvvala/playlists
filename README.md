@@ -99,4 +99,4 @@ Code coverage is above 80% (Rest is mostly controller layer)
 
 ## Deployment
 
-IN PROGRESS
+API is deployed in AWS and available at http://api.rvala.com/
