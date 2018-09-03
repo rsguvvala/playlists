@@ -72,6 +72,13 @@ curl http://host:port/music/playlists/recommendations?tag=alternative
 
 ## Design
 
+Only Delivery API is implemented as the focus of the problem is on Deivery
+
+<p align="center">
+  <img src="./static/PlayLists%20Design.png" alt="Tests"
+       width="654" height="450">
+</p>
+
 ## Tests & Coverage
 
 Most of business logic is around Service Layer and Custom Repository layer. There are 5 tests focussing these 2 areas.
@@ -90,3 +97,5 @@ Code coverage is above 80% (Rest is mostly controller layer)
 
 
 ## Deployment
+
+IN PROGRESS
