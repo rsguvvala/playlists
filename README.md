@@ -33,7 +33,7 @@ java -jar target/play-tracks-0.0.1-SNAPSHOT.jar
 
 ## Demo & API Contract
 
-API is hosted in AWS at http://api.rvala.com/
+API is hosted in AWS and available at http://api.rvala.com/
 
 ### Get All PlayLists
 
