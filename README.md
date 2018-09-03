@@ -70,7 +70,6 @@ curl http://api.rvala.com/music/playlists/recommendations?tag=alternative
 
 ```
 
-### Ingest(Create) New Play List
 
 ## Design
 
