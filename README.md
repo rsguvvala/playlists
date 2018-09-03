@@ -72,6 +72,21 @@ curl http://host:port/music/playlists/recommendations?tag=alternative
 
 ## Design
 
-## Tests
+## Tests & Coverage
+
+Most of business logic is around Service Layer and Custom Repository layer. There are 5 tests focussing these 2 areas.
+
+<p align="center">
+  <img src="./static/play_lists_tests.png" alt="Tests"
+       width="654" height="450">
+</p>
+
+Code coverage is above 80% (Rest is mostly controller layer)
+
+<p align="center">
+  <img src="./static/play_lists_code_coverage.png" alt="Tests"
+       width="654" height="450">
+</p>
+
 
 ## Deployment
