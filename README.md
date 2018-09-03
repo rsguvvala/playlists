@@ -81,7 +81,7 @@ Only Delivery API is implemented as the focus of the problem is on Deivery
 
 ## Tests & Coverage
 
-Most of business logic is around Service Layer and Custom Repository layer. There are 5 tests focussing these 2 areas.
+Most of business logic is around Service Layer and Custom Repository layer. Following are the Tests focussing these 2 areas.
 
 <p align="center">
   <img src="./static/play_lists_tests.png" alt="Tests"
