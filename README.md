@@ -1,22 +1,3 @@
-Table of Contents
-=================
-
-      * [Setup Instructions](#setup-instructions)
-         * [Prerequisites](#prerequisites)
-            * [Install Elasticsearch](#install-elasticsearch)
-            * [Install Kabana (Optional)](#install-kabana-optional)
-         * [Start the API locally](#start-the-api-locally)
-            * [Buid API](#buid-api)
-            * [Start the API](#start-the-api)
-      * [API Contract](#api-contract)
-         * [Get All PlayLists](#get-all-playlists)
-         * [Get Playlists by Tag](#get-playlists-by-tag)
-         * [Auto Suggest tags based on the query(tag)](#auto-suggest-tags-based-on-the-querytag)
-         * [Get Recommended tags](#get-recommended-tags)
-         * [Ingest(Create) New Play List](#ingestcreate-new-play-list)
-      * [Design](#design)
-      * [Tests &amp; Coverage](#tests--coverage)
-      * [Deployment](#deployment)
       
 ## Setup Instructions
 
