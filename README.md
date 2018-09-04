@@ -30,6 +30,7 @@ mvn clean install
 ```
 java -jar target/play-tracks-0.0.1-SNAPSHOT.jar
 
+Server starts on port 8877
 ```
 
 ## Demo & API Contract
