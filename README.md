@@ -77,7 +77,7 @@ curl http://api.rvala.com/music/playlists/recommendations?tag=alternative
 Only Delivery API is implemented as the focus of the problem is on Deivery
 
 <p align="center">
-  <img src="./static/PlayLists%20Design.png" alt="Tests"
+  <img src="./PlayLists%20Design.png" alt="Tests"
        width="654" height="450">
 </p>
 
