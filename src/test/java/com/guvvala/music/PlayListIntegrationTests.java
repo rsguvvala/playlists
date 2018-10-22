@@ -45,33 +45,33 @@ public class PlayListIntegrationTests {
 	}
 	
 	@Test
-	public void givenPlayListService_whenSavePlayList_thenSaveIsSuccessful() {
+	public void givenPlayListServiceWhenSavePlayListThenSaveIsSuccessful() {
 		PlayList playlist = getPlayList();
 		playListService.save(playlist);
 		assertNotNull(playlist.getId());
 	}
 	
 	@Test
-	public void givenPersistedPlayLists_whenSearchByTags_thenRelevantFound(){
+	public void givenPersistedPlayListsWhenSearchByTagsThenRelevantFound(){
 		PagedResult<List<PlayList>> playLists = playListService.getMusicTracksByTags("chill", PageRequest.of(0, 10));
 		assertEquals(3L, playLists.getElements().size());
 	}
 	
 	@Test
-	public void givenPersistedPlayLists_whenfindAll_thenAllFound(){
+	public void givenPersistedPlayListsWhenfindAllThenAllFound(){
 		PagedResult<List<PlayList>> playLists = playListService.getAllMusicTracks(PageRequest.of(0, 3));
 		assertEquals(3L, playLists.getElements().size());
 	}
 	
 	@Test
-	public void givenPersistedPlayLists_whenSearchByTagsforSuggestedTags_thenRightTagsAreFound(){
+	public void givenPersistedPlayListsWhenSearchByTagsforSuggestedTagsThenRightTagsAreFound(){
 		List<PlayListInfo> playListInfo = playListService.suggestMusickTracksByTag("pop");
 		assertEquals(2L, playListInfo.size());
 		assertEquals("pop rock", playListInfo.get(1).getTag());
 	}
 	
 	@Test
-	public void givenPersistedPlayLists_whenSearchByTagsforRelevantTags_thenRightTagsAreFound(){
+	public void givenPersistedPlayListsWhenSearchByTagsforRelevantTagsThenRightTagsAreFound(){
 		List<String> recommendedTags = playListService.recommendMusicTracksByTag("chill");
 		assertEquals(5L, recommendedTags.size());
 		assertEquals("bass", recommendedTags.get(0));
