@@ -7,7 +7,7 @@
 
 #### Install Elasticsearch
 
-Please follow https://www.elastic.co/guide/en/elasticsearch/guide/master/running-elasticsearch.html to setup elasticsearch.
+Please follow [link](https://www.elastic.co/guide/en/elasticsearch/guide/master/running-elasticsearch.html) to setup elasticsearch.
 
 Once the installation is complete, start the elastic search server as below
 
@@ -18,8 +18,7 @@ cd elasticsearch-<version>
 
 #### Install Kabana (Optional)
 
-Please follow https://www.elastic.co/guide/en/kibana/current/setup.html to setup Kibana
-
+Please follow [instructions](https://www.elastic.co/guide/en/kibana/current/setup.html) to setup Kibana
 
 ### Start the API locally
 
@@ -37,7 +36,7 @@ Server starts on port 8877
 
 ## Demo & API Contract
 
-API is hosted in AWS and available at http://api.rvala.com/
+API is hosted in AWS and available at demo [link](http://api.rvala.com/)
 
 ### Get All PlayLists
 
@@ -74,7 +73,6 @@ curl http://api.rvala.com/music/playlists/recommendations?tag=alternative
 
 ```
 
-
 ## Design
 
 Only Delivery API is implemented as the focus of the problem is on Deivery
@@ -96,7 +94,6 @@ Code coverage is above 80% (Rest is mostly controller layer)
        width="320" height="250">
 </p>
 
-
 ## Deployment
 
-API is deployed in AWS and available at http://api.rvala.com/
+API is deployed in AWS and available at <http://api.rvala.com/>
