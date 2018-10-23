@@ -1,5 +1,4 @@
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b3475240ca7344b1b5df4cd43a03b222)](https://www.codacy.com/app/rsguvvala/playlists?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rsguvvala/playlists&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4893b41e6b514601890f8b06e43444ba)](https://www.codacy.com/app/rsguvvala/playlists?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rsguvvala/playlists&amp;utm_campaign=Badge_Grade)
 
 ## Setup Instructions
 
