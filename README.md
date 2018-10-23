@@ -93,7 +93,3 @@ Code coverage is above 80% (Rest is mostly controller layer)
   <img src="./static/play_lists_code_coverage.png" alt="Coverage"
        width="320" height="250">
 </p>
-
-## Deployment
-
-API is deployed in AWS and available at <http://api.rvala.com/>
