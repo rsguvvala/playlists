@@ -49,13 +49,6 @@ public class PlayListController {
 	public PagedResult<List<PlayList>> playLists(@PageableDefault (value=10, page=0) Pageable pageable){
 		
 		logger.debug("debug: All Playlists");
-		try {
-			Thread.sleep(60000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 		return playTrackService.getAllMusicTracks(pageable); 
 	}
 	
