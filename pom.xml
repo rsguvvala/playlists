@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -79,8 +80,62 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+      <profile>
+          <id>codecoverage</id>
+          <activation>
+              <property><name>CI</name></property>
+          </activation>
+          <build>
+              <plugins>
+                  <plugin>
+                      <groupId>com.gavinmogan</groupId>
+                      <artifactId>codacy-maven-plugin</artifactId>
+                      <version>1.0.3</version>
+                      <configuration>
+                          <apiToken>${env.CODACY_API_TOKEN}</apiToken>
+                          <projectToken>${env.CODACY_PROJECT_TOKEN}</projectToken>
+                          <coverageReportFile>${project.reporting.outputDirectory}/jacoco.xml</coverageReportFile>
+                          <commit>0e9cc1c861da7b0b8b99bf169e5286df200c957f</commit>
+                          <codacyApiBaseUrl>https://api.codacy.com</codacyApiBaseUrl>
+                          <failOnMissingReportFile>false</failOnMissingReportFile>
+                      </configuration>
+                      <executions>
+                          <execution>
+                              <id>post-test</id>
+                              <phase>post-integration-test</phase>
+                              <goals>
+                                  <goal>coverage</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+              </plugins>
+          </build>
+      </profile>
+  </profiles>
 
 
 
