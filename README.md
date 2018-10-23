@@ -17,7 +17,7 @@ cd elasticsearch-<version>
 
 #### Install Kabana (Optional)
 
-Please follow [instructions](https://www.elastic.co/guide/en/kibana/current/setup.html) to setup Kibana
+Please follow [installation instructions](https://www.elastic.co/guide/en/kibana/current/setup.html) to setup Kibana
 
 ### Start the API locally
 
