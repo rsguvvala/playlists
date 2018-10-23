@@ -10,7 +10,7 @@ Please follow [link](https://www.elastic.co/guide/en/elasticsearch/guide/master/
 
 Once the installation is complete, start the elastic search server as below
 
-```
+``` bash
 cd elasticsearch-<version>
 ./bin/elasticsearch 
 ```
@@ -27,7 +27,7 @@ mvn clean install
 
 #### Start the API
 
-```
+``` bash
 java -jar target/play-tracks-0.0.1-SNAPSHOT.jar
 
 Server starts on port 8877
@@ -42,7 +42,7 @@ API is hosted in AWS and available at demo [link](http://api.rvala.com/)
 This end point displays Playlists in the descending orders of Views.
 Also supports pagination
 
-```
+``` bash
 curl http://api.rvala.com/music/playlists
 
 ```
@@ -51,14 +51,14 @@ curl http://api.rvala.com/music/playlists
 
 This end point displays Playlists in the descending orders of Views.
 Also supports pagination
-```
+``` bash
 curl http://api.rvala.com/music/playlists/{tag}
 
 ```
 ### Auto Suggest tags based on the query(tag)
 
 To get suggestions for the query "pop"
-```
+``` bash
 curl http://api.rvala.com/music/playlists/suggestions?tag=pop
 
 ```
@@ -67,7 +67,7 @@ curl http://api.rvala.com/music/playlists/suggestions?tag=pop
 These tags will be based on the appearance of the other tags along with the searched tag
 
 To get recommended tags for "alternative"
-```
+``` bash
 curl http://api.rvala.com/music/playlists/recommendations?tag=alternative
 
 ```
