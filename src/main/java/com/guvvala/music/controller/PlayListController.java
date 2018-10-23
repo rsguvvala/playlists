@@ -33,7 +33,7 @@ import com.guvvala.music.service.PlayListService;
 @RequestMapping("/music")
 public class PlayListController {
 
-	Logger logger = LoggerFactory.getLogger(PlayListController.class);
+	private Logger logger = LoggerFactory.getLogger(PlayListController.class);
 	
 	@Autowired
 	private PlayListService playTrackService;
