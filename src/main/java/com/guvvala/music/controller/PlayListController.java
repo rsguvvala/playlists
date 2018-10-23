@@ -5,6 +5,8 @@ package com.guvvala.music.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -31,8 +33,10 @@ import com.guvvala.music.service.PlayListService;
 @RequestMapping("/music")
 public class PlayListController {
 
+	Logger logger = LoggerFactory.getLogger(PlayListController.class);
+	
 	@Autowired
-	PlayListService playTrackService;
+	private PlayListService playTrackService;
 	
 	/**
 	 * 
@@ -43,6 +47,15 @@ public class PlayListController {
 	 */
 	@RequestMapping(value="/playlists", method=RequestMethod.GET)
 	public PagedResult<List<PlayList>> playLists(@PageableDefault (value=10, page=0) Pageable pageable){
+		
+		logger.debug("debug: All Playlists");
+		try {
+			Thread.sleep(60000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return playTrackService.getAllMusicTracks(pageable); 
 	}
 	

@@ -26,7 +26,7 @@ import com.guvvala.music.repository.PlayListRepository;
 public class PlayListServiceImpl implements PlayListService{
 
 	@Autowired
-	PlayListRepository playListReository;
+	private PlayListRepository playListReository;
 	
 	/**
 	 * 
